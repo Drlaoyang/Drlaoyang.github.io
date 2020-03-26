@@ -2,11 +2,11 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   const algoliaSettings = CONFIG.algolia;
-  const { indexName, appID, apiKey } = algoliaSettings;
+  const { indexName, applicationID, apiKey } = algoliaSettings;
 
   let search = instantsearch({
     indexName,
-    searchClient  : algoliasearch(appID, apiKey),
+    searchClient  : algoliasearch(applicationID, apiKey),
     searchFunction: helper => {
       let searchInput = document.querySelector('.search-input');
       if (searchInput.value) {
