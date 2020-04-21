@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drlaoyang.top/"/>
-  <updated>2020-03-30T10:47:39.259Z</updated>
+  <updated>2020-04-21T15:17:01.812Z</updated>
   <id>https://drlaoyang.top/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>杂碎</title>
+    <link href="https://drlaoyang.top/post/25857244.html"/>
+    <id>https://drlaoyang.top/post/25857244.html</id>
+    <published>2020-04-21T15:01:09.000Z</published>
+    <updated>2020-04-21T15:17:01.812Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;安利我的世界创造服，大神好多的：redstoner.cn&lt;/p&gt;
+&lt;p&gt;wxPython实现响铃语句:&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://drlaoyang.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="杂碎" scheme="https://drlaoyang.top/tags/%E6%9D%82%E7%A2%8E/"/>
+    
+      <category term="MC" scheme="https://drlaoyang.top/tags/MC/"/>
+    
+      <category term="Python" scheme="https://drlaoyang.top/tags/Python/"/>
+    
+      <category term="wxPython" scheme="https://drlaoyang.top/tags/wxPython/"/>
+    
+  </entry>
   
   <entry>
     <title>重装系统</title>
