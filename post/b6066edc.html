@@ -21,21 +21,24 @@
     var CONFIG = {"hostname":"drlaoyang.top","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"搜索文章","hits_empty":"我们没有找到任何搜索结果: ${query}","hits_stats":"找到${hits}个结果(${time} ms)"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="Hello There.你好，我是drlaoyang. 我决定把这个作为我的吉祥物。这是我一生最爱的东西。  ​    我知道，这是个奇怪的名字，但是他对我来说有特殊的意义，曾经别人都叫我老杨的，自从升上初中，已经很少有人叫我老杨了。我不擅长表达自己，抱歉。  06&#x2F;10&#x2F;21  爱世界，做自己，哮着玩游戏  有缘终会相遇，终会再见。  为成为最有team精神的码农而学习，而努力！  8说了，我背">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://drlaoyang.top/about/index.html">
+  <meta name="description" content="手表的选择​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Arduino pro mini(328P 8M 3v3)的OLED手表">
+<meta property="og:url" content="https://drlaoyang.top/post/b6066edc.html">
 <meta property="og:site_name" content="Drlaoyang的博客">
-<meta property="og:description" content="Hello There.你好，我是drlaoyang. 我决定把这个作为我的吉祥物。这是我一生最爱的东西。  ​    我知道，这是个奇怪的名字，但是他对我来说有特殊的意义，曾经别人都叫我老杨的，自从升上初中，已经很少有人叫我老杨了。我不擅长表达自己，抱歉。  06&#x2F;10&#x2F;21  爱世界，做自己，哮着玩游戏  有缘终会相遇，终会再见。  为成为最有team精神的码农而学习，而努力！  8说了，我背">
-<meta property="og:image" content="https://s1.ax1x.com/2020/03/28/GEVao4.jpg">
-<meta property="og:image" content="https://s1.ax1x.com/2020/03/28/GEVpZD.png">
-<meta property="article:published_time" content="2020-03-28T15:01:34.000Z">
-<meta property="article:modified_time" content="2020-03-28T15:59:38.653Z">
+<meta property="og:description" content="手表的选择​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。">
+<meta property="og:image" content="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg">
+<meta property="og:image" content="https://img.alicdn.com/imgextra/i3/2208586675/O1CN019vemq21zBCEurJOd0_!!2208586675.jpg_430x430q90.jpg">
+<meta property="article:published_time" content="2021-01-27T03:39:32.000Z">
+<meta property="article:modified_time" content="2021-01-27T04:05:00.153Z">
 <meta property="article:author" content="Yang Xuanzheng">
+<meta property="article:tag" content="Arduino">
+<meta property="article:tag" content="DS1302">
+<meta property="article:tag" content="SSD1306">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2020/03/28/GEVao4.jpg">
+<meta name="twitter:image" content="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg">
 
-<link rel="canonical" href="https://drlaoyang.top/about/">
+<link rel="canonical" href="https://drlaoyang.top/post/b6066edc.html">
 
 
 <script id="page-configurations">
@@ -43,13 +46,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-Hans'
   };
 </script>
 
-  <title>about | Drlaoyang的博客
-</title>
+  <title>基于Arduino pro mini(328P 8M 3v3)的OLED手表 | Drlaoyang的博客</title>
   
 
 
@@ -190,58 +192,207 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page">
+          <div class="content post">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-Hans">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">about
-</h1>
-
-<div class="post-meta">
+      
   
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://drlaoyang.top/post/b6066edc.html">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Yang Xuanzheng">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Drlaoyang的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          基于Arduino pro mini(328P 8M 3v3)的OLED手表
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-27 11:39:32 / 修改时间：12:05:00" itemprop="dateCreated datePublished" datetime="2021-01-27T11:39:32+08:00">2021-01-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/post/b6066edc.html" class="post-meta-item leancloud_visitors" data-flag-title="基于Arduino pro mini(328P 8M 3v3)的OLED手表" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/post/b6066edc.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/b6066edc.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>347</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="手表的选择"><a href="#手表的选择" class="headerlink" title="手表的选择"></a>手表的选择</h1><p>​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。</p>
+<a id="more"></a>
+<h1 id="配件的购买"><a href="#配件的购买" class="headerlink" title="配件的购买"></a>配件的购买</h1><p>0.91寸OLED屏，IIC<img src="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg" alt="OLED屏" style="zoom:25%;" /></p>
+<p>pro mini<img src="https://img.alicdn.com/imgextra/i3/2208586675/O1CN019vemq21zBCEurJOd0_!!2208586675.jpg_430x430q90.jpg" style="zoom:33%;" />，另外这块板子没有自带USB口，所以需要USB转UART的模块，我这里用到CP2102。</p>
+<p>DS1302，这个是核心零件，至于图片这里不放了。我用的是SOP8封装的贴片，配了SOP8封装的PCB实验板。</p>
+<p>32.768KHz的无源晶振，DS1302上必须用。</p>
+<p>锂电池200毫安时，3.7v，配一个可充电的过充过放保护板。</p>
+<p><strong>以上零件均可在淘宝买到</strong></p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><p>用到了olikraus的u8g2, Makuna的RTC第三方库文件。</p>
+<p>代码还没写，前一阵子OLED屏幕摔坏了，所以重买了一块，等货回来组装好以后试验着写。</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>来杯Java? awa</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Yang Xuanzheng 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
 </div>
 
-</header>
+        
 
-      
-      
-      
-      <div class="post-body">
-          <h1 id="Hello-There"><a href="#Hello-There" class="headerlink" title="Hello There."></a>Hello There.</h1><h2 id="你好，我是drlaoyang"><a href="#你好，我是drlaoyang" class="headerlink" title="你好，我是drlaoyang."></a>你好，我是drlaoyang.</h2><p><img src="https://s1.ax1x.com/2020/03/28/GEVao4.jpg" alt="吉祥物"></p>
-<p>我决定把这个作为我的<strong>吉祥物</strong>。这是我一生<strong>最爱</strong>的<strong>东西</strong>。</p>
-<hr>
-<p>​    我知道，这是个奇怪的名字，但是他对我来说有特殊的意义，曾经别人都叫我<strong>老杨</strong>的，自从升上初中，已经很少有人叫我<strong>老杨</strong>了。我不擅长表达自己，抱歉。</p>
-<hr>
-<p>06/10/21</p>
-<hr>
-<p>爱世界，做自己，<strong>哮</strong>着玩游戏<img src="https://s1.ax1x.com/2020/03/28/GEVpZD.png" alt="smile" style="zoom:50%;" /></p>
-<hr>
-<p>有缘终会相遇，终会再见。</p>
-<hr>
-<p>为成为最有team精神的码农而学习，而努力！</p>
-<hr>
-<p>8说了，我背文科去了。</p>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Yang Xuanzheng
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://drlaoyang.top/post/b6066edc.html" title="基于Arduino pro mini(328P 8M 3v3)的OLED手表">https://drlaoyang.top/post/b6066edc.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-      </div>
-      
-      
-      
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.png">
+            <span class="icon">
+              <i class="fa fa-wechat"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
     </div>
-    
+  </div>
 
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Arduino/" rel="tag"># Arduino</a>
+              <a href="/tags/DS1302/" rel="tag"># DS1302</a>
+              <a href="/tags/SSD1306/" rel="tag"># SSD1306</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/post/25857244.html" rel="prev" title="杂碎">
+      <i class="fa fa-chevron-left"></i> 杂碎
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
     
-    
-    
+  </article>
+  
+  
+  
+
   </div>
 
 
@@ -294,7 +445,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-There"><span class="nav-number">1.</span> <span class="nav-text">Hello There.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#你好，我是drlaoyang"><span class="nav-number">1.1.</span> <span class="nav-text">你好，我是drlaoyang.</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#手表的选择"><span class="nav-number">1.</span> <span class="nav-text">手表的选择</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配件的购买"><span class="nav-number">2.</span> <span class="nav-text">配件的购买</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码部分"><span class="nav-number">3.</span> <span class="nav-text">代码部分</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

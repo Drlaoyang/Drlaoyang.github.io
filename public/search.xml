@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基于Arduino pro mini(328P 8M 3v3)的OLED手表</title>
+    <url>/post/b6066edc.html</url>
+    <content><![CDATA[<h1 id="手表的选择"><a href="#手表的选择" class="headerlink" title="手表的选择"></a>手表的选择</h1><p>​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。</p>
+<a id="more"></a>
+<h1 id="配件的购买"><a href="#配件的购买" class="headerlink" title="配件的购买"></a>配件的购买</h1><p>0.91寸OLED屏，IIC<img src="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg" alt="OLED屏" style="zoom:25%;" /></p>
+<p>pro mini<img src="https://img.alicdn.com/imgextra/i3/2208586675/O1CN019vemq21zBCEurJOd0_!!2208586675.jpg_430x430q90.jpg" style="zoom:33%;" />，另外这块板子没有自带USB口，所以需要USB转UART的模块，我这里用到CP2102。</p>
+<p>DS1302，这个是核心零件，至于图片这里不放了。我用的是SOP8封装的贴片，配了SOP8封装的PCB实验板。</p>
+<p>32.768KHz的无源晶振，DS1302上必须用。</p>
+<p>锂电池200毫安时，3.7v，配一个可充电的过充过放保护板。</p>
+<p><strong>以上零件均可在淘宝买到</strong></p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><p>用到了olikraus的u8g2, Makuna的RTC第三方库文件。</p>
+<p>代码还没写，前一阵子OLED屏幕摔坏了，所以重买了一块，等货回来组装好以后试验着写。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Arduino</tag>
+        <tag>DS1302</tag>
+        <tag>SSD1306</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>杂碎</title>
     <url>/post/25857244.html</url>
     <content><![CDATA[<p>安利我的世界创造服，大神好多的：redstoner.cn</p>

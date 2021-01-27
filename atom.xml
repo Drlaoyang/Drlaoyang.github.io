@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://drlaoyang.top/"/>
-  <updated>2020-04-26T11:47:26.429Z</updated>
+  <updated>2021-01-27T04:05:00.153Z</updated>
   <id>https://drlaoyang.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于Arduino pro mini(328P 8M 3v3)的OLED手表</title>
+    <link href="https://drlaoyang.top/post/b6066edc.html"/>
+    <id>https://drlaoyang.top/post/b6066edc.html</id>
+    <published>2021-01-27T03:39:32.000Z</published>
+    <updated>2021-01-27T04:05:00.153Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;手表的选择&quot;&gt;&lt;a href=&quot;#手表的选择&quot; class=&quot;headerlink&quot; title=&quot;手表的选择&quot;&gt;&lt;/a&gt;手表的选择&lt;/h1&gt;&lt;p&gt;​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://drlaoyang.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Arduino" scheme="https://drlaoyang.top/tags/Arduino/"/>
+    
+      <category term="DS1302" scheme="https://drlaoyang.top/tags/DS1302/"/>
+    
+      <category term="SSD1306" scheme="https://drlaoyang.top/tags/SSD1306/"/>
+    
+  </entry>
   
   <entry>
     <title>杂碎</title>
