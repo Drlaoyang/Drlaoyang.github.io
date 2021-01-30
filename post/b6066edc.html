@@ -23,14 +23,14 @@
 
   <meta name="description" content="手表的选择​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于Arduino pro mini(328P 8M 3v3)的OLED手表">
+<meta property="og:title" content="基于DS1302的OLED手表">
 <meta property="og:url" content="https://drlaoyang.top/post/b6066edc.html">
 <meta property="og:site_name" content="Drlaoyang的博客">
 <meta property="og:description" content="手表的选择​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。">
 <meta property="og:image" content="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg">
 <meta property="og:image" content="https://img.alicdn.com/imgextra/i3/2208586675/O1CN019vemq21zBCEurJOd0_!!2208586675.jpg_430x430q90.jpg">
 <meta property="article:published_time" content="2021-01-27T03:39:32.000Z">
-<meta property="article:modified_time" content="2021-01-27T04:05:00.153Z">
+<meta property="article:modified_time" content="2021-01-30T04:58:40.567Z">
 <meta property="article:author" content="Yang Xuanzheng">
 <meta property="article:tag" content="Arduino">
 <meta property="article:tag" content="DS1302">
@@ -51,7 +51,7 @@
   };
 </script>
 
-  <title>基于Arduino pro mini(328P 8M 3v3)的OLED手表 | Drlaoyang的博客</title>
+  <title>基于DS1302的OLED手表 | Drlaoyang的博客</title>
   
 
 
@@ -214,7 +214,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          基于Arduino pro mini(328P 8M 3v3)的OLED手表
+          基于DS1302的OLED手表
         </h1>
 
         <div class="post-meta">
@@ -223,10 +223,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-27 11:39:32 / 修改时间：12:05:00" itemprop="dateCreated datePublished" datetime="2021-01-27T11:39:32+08:00">2021-01-27</time>
+              <time title="创建时间：2021-01-27 11:39:32" itemprop="dateCreated datePublished" datetime="2021-01-27T11:39:32+08:00">2021-01-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-30 12:58:40" itemprop="dateModified" datetime="2021-01-30T12:58:40+08:00">2021-01-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -238,7 +244,7 @@
             </span>
 
           
-            <span id="/post/b6066edc.html" class="post-meta-item leancloud_visitors" data-flag-title="基于Arduino pro mini(328P 8M 3v3)的OLED手表" title="阅读次数">
+            <span id="/post/b6066edc.html" class="post-meta-item leancloud_visitors" data-flag-title="基于DS1302的OLED手表" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -271,7 +277,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>347</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -292,14 +298,15 @@
       
         <h1 id="手表的选择"><a href="#手表的选择" class="headerlink" title="手表的选择"></a>手表的选择</h1><p>​    之前买了小米手环4，但是充电方式很鸡肋，不能很方便的充电。忘拿配套充电座的时候没法充，充电还得把表带摘下来。于是有了自己造一块手表的想法。</p>
 <a id="more"></a>
-<h1 id="配件的购买"><a href="#配件的购买" class="headerlink" title="配件的购买"></a>配件的购买</h1><p>0.91寸OLED屏，IIC<img src="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg" alt="OLED屏" style="zoom:25%;" /></p>
+<h1 id="元器件的购买"><a href="#元器件的购买" class="headerlink" title="元器件的购买"></a>元器件的购买</h1><p>0.91寸OLED屏，IIC<img src="https://gd3.alicdn.com/imgextra/i3/2658592015/TB2NKNuwFmWBuNjSspdXXbugXXa_!!2658592015.jpg" alt="OLED屏" style="zoom:25%;" /></p>
 <p>pro mini<img src="https://img.alicdn.com/imgextra/i3/2208586675/O1CN019vemq21zBCEurJOd0_!!2208586675.jpg_430x430q90.jpg" style="zoom:33%;" />，另外这块板子没有自带USB口，所以需要USB转UART的模块，我这里用到CP2102。</p>
 <p>DS1302，这个是核心零件，至于图片这里不放了。我用的是SOP8封装的贴片，配了SOP8封装的PCB实验板。</p>
 <p>32.768KHz的无源晶振，DS1302上必须用。</p>
 <p>锂电池200毫安时，3.7v，配一个可充电的过充过放保护板。</p>
 <p><strong>以上零件均可在淘宝买到</strong></p>
 <h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><p>用到了olikraus的u8g2, Makuna的RTC第三方库文件。</p>
-<p>代码还没写，前一阵子OLED屏幕摔坏了，所以重买了一块，等货回来组装好以后试验着写。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;RtcDS1302.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;U8x8lib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">ThreeWire <span class="title">myWire</span><span class="params">(<span class="number">4</span>,<span class="number">3</span>,<span class="number">5</span>)</span></span>;</span><br><span class="line"><span class="function">RtcDS1302&lt;ThreeWire&gt; <span class="title">Rtc</span><span class="params">(myWire)</span></span>;</span><br><span class="line"><span class="function">U8X8_SSD1306_128X32_UNIVISION_HW_I2C <span class="title">u8x8</span><span class="params">(<span class="comment">/* reset=*/</span> U8X8_PIN_NONE, <span class="comment">/* clock=*/</span> SCL, <span class="comment">/* data=*/</span> SDA)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">Serial</span>.<span class="built_in">begin</span>(<span class="number">57600</span>);</span><br><span class="line">  Rtc.Begin();</span><br><span class="line"></span><br><span class="line">  RtcDateTime compiled = RtcDateTime(__DATE__, __TIME__);</span><br><span class="line">      <span class="keyword">if</span> (!Rtc.IsDateTimeValid()) </span><br><span class="line">    &#123;</span><br><span class="line">        Rtc.SetDateTime(compiled);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (Rtc.GetIsWriteProtected())</span><br><span class="line">    &#123;</span><br><span class="line">        Rtc.SetIsWriteProtected(<span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!Rtc.GetIsRunning())</span><br><span class="line">    &#123;</span><br><span class="line">        Rtc.SetIsRunning(<span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    RtcDateTime now = Rtc.GetDateTime();</span><br><span class="line">    <span class="keyword">if</span> (now &lt; compiled) </span><br><span class="line">    &#123;</span><br><span class="line">    Rtc.SetDateTime(compiled);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  u8x8.<span class="built_in">begin</span>();</span><br><span class="line">  u8x8.setPowerSave(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  RtcDateTime now = Rtc.GetDateTime();</span><br><span class="line">  u8x8.setFont(u8x8_font_chroma48medium8_r);</span><br><span class="line">  printDateTime(now);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> countof(a) (sizeof(a) / sizeof(a[0]))</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">printDateTime</span><span class="params">(<span class="keyword">const</span> RtcDateTime&amp; dt)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> datestring[<span class="number">9</span>];</span><br><span class="line">    <span class="keyword">char</span> timestring[<span class="number">11</span>];</span><br><span class="line"></span><br><span class="line">    snprintf_P(datestring, </span><br><span class="line">            countof(datestring),</span><br><span class="line">            PSTR(<span class="string">"%02u:%02u:%02u"</span>), </span><br><span class="line">            dt.Hour(),</span><br><span class="line">            dt.Minute(),</span><br><span class="line">            dt.Second() );</span><br><span class="line">    u8x8.drawString(<span class="number">0</span>,<span class="number">0</span>,datestring);</span><br><span class="line">            </span><br><span class="line">    snprintf_P(timestring,</span><br><span class="line">            countof(timestring),</span><br><span class="line">            PSTR(<span class="string">"%04u/%02u/%02u"</span>),</span><br><span class="line">            dt.Year(),</span><br><span class="line">            dt.Month(),</span><br><span class="line">            dt.Day() );</span><br><span class="line">    u8x8.drawString(<span class="number">0</span>,<span class="number">1</span>,timestring);</span><br><span class="line">    u8x8.refreshDisplay();</span><br><span class="line">    <span class="built_in">delay</span>(<span class="number">1000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -330,7 +337,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://drlaoyang.top/post/b6066edc.html" title="基于Arduino pro mini(328P 8M 3v3)的OLED手表">https://drlaoyang.top/post/b6066edc.html</a>
+    <a href="https://drlaoyang.top/post/b6066edc.html" title="基于DS1302的OLED手表">https://drlaoyang.top/post/b6066edc.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -445,7 +452,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#手表的选择"><span class="nav-number">1.</span> <span class="nav-text">手表的选择</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配件的购买"><span class="nav-number">2.</span> <span class="nav-text">配件的购买</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码部分"><span class="nav-number">3.</span> <span class="nav-text">代码部分</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#手表的选择"><span class="nav-number">1.</span> <span class="nav-text">手表的选择</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#元器件的购买"><span class="nav-number">2.</span> <span class="nav-text">元器件的购买</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码部分"><span class="nav-number">3.</span> <span class="nav-text">代码部分</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -518,12 +525,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
